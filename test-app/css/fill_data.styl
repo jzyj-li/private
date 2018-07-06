@@ -1,0 +1,87 @@
+@import "common.styl"
+.fill-data
+	padding-top .3rem
+	padding-bottom 2rem
+.tab-nav
+	display flex
+	flex-flow row
+	justify-content space-around
+	width 92%
+	height .5rem
+	border 1px solid $color
+	border-collapse collapse
+	margin-left 4%
+	.item
+		border-collapse collapse
+		flex 1
+		font-size 12px
+		border-right 1px solid $color
+		text-align center
+		color $color
+	.item:last-child
+		border-right none
+.tab-nav .item.active
+	background-color $color
+	color white
+.tab-content
+	display none
+	&.active
+		display block
+.form-item
+	width 92%
+	height .9rem
+	margin-top .4rem
+	border 1px solid $color
+	label
+		position relative
+		width 1.7rem
+		padding-left 0
+		line-height .9rem
+		font-size 14px
+		color #333333
+		&:after
+			position absolute
+			right 0
+			top .15rem
+			display block
+			content ''
+			width 1px
+			height .55rem
+			background-color $color
+	input
+		padding-left .3rem
+.button
+	width 92%
+	margin-left 4%
+.fill-data .small-form
+	width 100%
+	padding 0 4%
+	.small-form-item
+		width 48%
+.no-padd
+	padding-left 0
+.detail
+	display none
+.del
+	display none
+.button
+	margin-bottom .3rem
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

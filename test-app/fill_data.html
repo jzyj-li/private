@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>数据填报</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/fill_data.css">
+    <link rel="stylesheet"  />
+    <script type="text/javascript" charset="utf-8">
+        mui.init();
+    </script>
+</head>
+<body>
+    <section class="fill-data">
+        <form action="" class="small-form">
+            <div class="small-form-item">
+                <label for="">
+                    品种
+                </label>
+                <input type="hidden">
+                <span class="pull mui-icon mui-icon-arrowdown"></span>
+            </div>
+            <div class="small-form-item">
+                <label for="">
+                    种植批次
+                </label>
+                <input type="hidden">
+                <span class="pull mui-icon mui-icon-arrowdown"></span>
+            </div>
+        </form>
+        <div class="tab-nav">
+            <div class="item active">
+                施肥
+            </div>
+            <div class="item">
+                施药
+            </div>
+            <div class="item">
+                采收
+            </div>
+        </div>
+        <!--施肥-->
+        <div class="tab-content active">
+            <form action="" class="form">
+                <div class="form-item">
+                    <label for="">
+                        肥料名称
+                    </label>
+                    <input type="text" placeholder="请选择肥料名称">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        肥料编号
+                    </label>
+                    <input type="text" placeholder="请输入肥料编号">
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        施肥量
+                    </label>
+                    <input type="text" placeholder="请输入施肥量">
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        施肥方法
+                    </label>
+                    <input type="text" placeholder="请选择施肥方法">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        施用人
+                    </label>
+                    <input type="text" placeholder="请选择施用人">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+
+                <div class="form-item">
+                    <label for="">
+                        施用日期
+                    </label>
+                    <input type="text" placeholder="请选择施用日期">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+            </form>
+            <!--上传照片-->
+            <div class="tip">
+                请上传肥料照片
+            </div>
+            <div class="upload">
+                <div class="item">
+                    <img src="images/p.png" alt="">
+                    <p>选择上传</p>
+                </div>
+                <div class="item">
+                    <img src="images/c.png" alt="">
+                    <p>拍照</p>
+                </div>
+            </div>
+            <button class="button">
+                提交
+            </button>
+        </div>
+        <!--施药-->
+        <div class="tab-content">
+            <form action="" class="form">
+                <div class="form-item">
+                    <label for="">
+                        农药名称
+                    </label>
+                    <input type="text" placeholder="请选择农药名称">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        农药编号
+                    </label>
+                    <input type="text" placeholder="请输入肥料编号">
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        防治对象
+                    </label>
+                    <input type="text" placeholder="请选择防治对象">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        安全间隔期
+                    </label>
+                    <input type="text" placeholder="请选择安全间隔期">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        施药量
+                    </label>
+                    <input type="text" placeholder="请输入施药量">
+                </div>
+
+                <div class="form-item">
+                    <label for="">
+                        施药浓度
+                    </label>
+                    <input type="text" placeholder="请选择施药浓度">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        施药方式
+                    </label>
+                    <input type="text" placeholder="请选择施药方式">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        施用人
+                    </label>
+                    <input type="text" placeholder="请选择施用人">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        施用日期
+                    </label>
+                    <input type="text" placeholder="请选择施用日期">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+            </form>
+            <!--上传照片-->
+            <div class="tip">
+                请上传农药照片
+            </div>
+            <div class="upload">
+                <div class="item">
+                    <img src="images/p.png" alt="">
+                    <p>选择上传</p>
+                </div>
+                <div class="item">
+                    <img src="images/c.png" alt="">
+                    <p>拍照</p>
+                </div>
+            </div>
+            <button class="button">
+                提交
+            </button>
+        </div>
+        <!--采收-->
+        <div class="tab-content">
+            <form action="" class="form">
+                <div class="form-item">
+                    <label for="">
+                        地块编号
+                    </label>
+                    <input type="text" placeholder="请选择地块编号">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        采收日期
+                    </label>
+                    <input type="text" placeholder="请选择采收日期">
+                    <span class="pull mui-icon mui-icon-arrowdown"></span>
+                </div>
+                <div class="form-item">
+                    <label for="">
+                        采收量
+                    </label>
+                    <input type="text" placeholder="请输入采收量">
+                </div>
+            </form>
+            <div class="tip no-padd">
+                <div class="mui-input-row mui-checkbox">
+                    <label>采收完毕</label>
+                    <input name="checkbox1" value="Item 1" type="checkbox" checked>
+                </div>
+            </div>
+            <button class="button">
+                提交
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="index.html" class="item">
+                <img src="images/icon-2.png" alt="" width="22">
+                <p>批次填报</p>
+            </a>
+            <a href="fill_data.html" class="item">
+                <img src="images/icon-2.png" alt="" width="22">
+                <p>数据填报</p>
+            </a>
+            <a href="list.html" class="item">
+                <img src="images/icon-1.png" alt="" width="25">
+                <p>上传记录</p>
+            </a>
+            <a href="mine.html" class="item">
+                <img src="images/icon-3.png" alt="" width="25">
+                <p>个人信息</p>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+<script src="js/common.js"></script>
+
+</html>

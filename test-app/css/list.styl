@@ -1,0 +1,50 @@
+@import "common.styl"
+.tab-nav
+	display flex
+	flex-flow row
+	justify-content space-around
+	width 92%
+	height .5rem
+	border 1px solid $color
+	border-collapse collapse
+	margin-left 4%
+	margin-bottom .3rem
+	margin-top .3rem
+	.item
+		border-collapse collapse
+		flex 1
+		font-size 12px
+		border-right 1px solid $color
+		text-align center
+		color $color
+	.item:last-child
+		border-right none
+.tab-nav .item.active
+	background-color $color
+	color white
+.tab-content
+	width 92%
+	margin-left 4%
+	display none
+	&.active
+		display block
+.layout-list
+	.item
+		min-height 1rem
+		border-top 1px solid $color
+	.top,.bottom
+		display flex
+		flex-flow row
+		justify-content space-between
+		.title
+			font-size 14px
+			color #3min-33333
+		.date
+			font-size 12px
+			color #666666
+	.left
+		font-size 12px
+	.right
+		font-size 14px
+		color $color
+	

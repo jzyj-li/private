@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font-size: 50px;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+p {
+  margin: 0;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+}
+.bg img {
+  width: 100%;
+}
+.form {
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  overflow: hidden;
+}
+.form-item {
+  width: 80%;
+  height: 0.83rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: #c8da36;
+  border: 0.06rem solid #c8da36;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+}
+.form-item label {
+  height: 100%;
+  background-color: #fff;
+  font-size: 16px;
+  color: #666;
+  flex-shrink: 0;
+  padding-left: 0.3rem;
+  line-height: 0.71rem;
+}
+.form-item input {
+  font-size: 14px;
+  border: none;
+  margin-bottom: 0;
+  height: 100%;
+  padding-left: 0px;
+  border-radius: 0px;
+}
+.form-item .code {
+  color: #fff;
+  font-size: 12px;
+  flex-shrink: 0;
+  padding: 0 0.22rem;
+}
+.form-item .pull {
+  color: #fff;
+}
+.button {
+  width: 80%;
+  height: 0.83rem;
+  margin: 0 auto;
+  background-color: #c8da36;
+  font-size: 16px;
+  text-align: center;
+  line-height: 0.83rem;
+  color: #fff;
+  padding: 0px;
+}
+.small-form-item {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  width: 30%;
+  height: 0.6rem;
+  border: 1px solid #c8da36;
+  margin-bottom: 0.2rem;
+}
+.small-form-item label {
+  line-height: 0.6rem;
+  width: 100%;
+  text-align: center;
+  padding-left: 0.2rem;
+}
+.small-form-item span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  background-color: #c8da36;
+  height: 100%;
+  line-height: 0.6rem;
+}
+.txt {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 0.6rem;
+}
+.small-form {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.search {
+  width: 25%;
+  height: 0.6rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.6rem;
+  font-size: 12px;
+  background-color: #c8da36;
+  margin-bottom: 0.3rem;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: 1.2rem;
+  background-color: #c8da36;
+}
+.footer .item {
+  text-align: center;
+  display: block;
+  flex: 1;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 0.2rem;
+}
+.footer .item p {
+  color: #fff;
+  font-size: 12px;
+}
+.upload {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.upload p {
+  margin-top: 0.2rem;
+  font-size: 14px;
+  color: #c8da36;
+}
+.tip {
+  padding-left: 4%;
+  font-size: 14px;
+  color: #333;
+}
+.fill-data {
+  padding-top: 0.3rem;
+  padding-bottom: 2rem;
+}
+.tab-nav {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 92%;
+  height: 0.5rem;
+  border: 1px solid #c8da36;
+  border-collapse: collapse;
+  margin-left: 4%;
+}
+.tab-nav .item {
+  border-collapse: collapse;
+  flex: 1;
+  font-size: 12px;
+  border-right: 1px solid #c8da36;
+  text-align: center;
+  color: #c8da36;
+}
+.tab-nav .item:last-child {
+  border-right: none;
+}
+.tab-nav .item.active {
+  background-color: #c8da36;
+  color: #fff;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.form-item {
+  width: 92%;
+  height: 0.9rem;
+  margin-top: 0.4rem;
+  border: 1px solid #c8da36;
+}
+.form-item label {
+  position: relative;
+  width: 1.7rem;
+  padding-left: 0;
+  line-height: 0.9rem;
+  font-size: 14px;
+  color: #333;
+}
+.form-item label:after {
+  position: absolute;
+  right: 0;
+  top: 0.15rem;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 0.55rem;
+  background-color: #c8da36;
+}
+.form-item input {
+  padding-left: 0.3rem;
+}
+.button {
+  width: 92%;
+  margin-left: 4%;
+}
+.fill-data .small-form {
+  width: 100%;
+  padding: 0 4%;
+}
+.fill-data .small-form .small-form-item {
+  width: 48%;
+}
+.no-padd {
+  padding-left: 0;
+}
+.detail {
+  display: none;
+}
+.del {
+  display: none;
+}
+.button {
+  margin-bottom: 0.3rem;
+}
