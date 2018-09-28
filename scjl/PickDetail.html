@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>数据填报</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<link rel="stylesheet" href="css/fill_data.css">
+		<link rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+	<style>
+		.detail {
+			padding-top: .8rem;
+			display: block;
+		}
+	</style>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-nav" style="background: #c8da36">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: white"></a>
+			<h1 class="mui-title" style="color: white;">详情</h1>
+		</header>
+		<section class="detail">
+
+			<!--施肥-->
+			<div class="tab-content active">
+				<form action="" class="form">
+					<div class="form-item">
+						<label for="">
+                                  品种
+            </label>
+						<input type="text" disabled id="breedsName" disabled>
+						<input type="hidden" id="breedsId">
+
+					</div>
+					<div class="form-item">
+						<label for="">
+                    	种植批次
+                </label>
+						<input type="text" id="cropBatchCode" disabled>
+						<input type="hidden" name='cropBatchId' id='cropBatchId'>
+
+					</div>
+					<!--<div class="form-item">
+                    <label for="">
+                        地块编号
+                    </label>
+                    <input type="text" placeholder="请选择地块编号" disabled name='farmlandCode'>
+                    <span class="pull mui-icon mui-icon-arrowdown" data-type='farmlandList'></span>
+                </div>-->
+					<div class="form-item">
+						<label for="">
+                        采收日期
+                    </label>
+						<input type="text" placeholder="请选择采收日期" name='pickDate'>
+						<span class="pull mui-icon mui-icon-arrowdown" data-type='date' data-label='pickDate' data-index='0'></span>
+					</div>
+					<div class="form-item">
+						<label for="">
+                        采收量
+                    </label>
+						<input type="number" placeholder="请输入采收量" name='pickAmount'>
+					</div>
+
+					<div class="mui-input-row mui-checkbox" style="font-size: 14px;text-align: left;display: none;">
+						<label>采收完毕</label>
+						<input name="pickFinish" type="checkbox" id="pickFinish">
+					</div>
+				</form>
+				<div class="button-wrap">
+					<button class="button delete" type="button" data-type='PickParam'>
+	            	删除
+	            </button>
+					<button class="button submit" type="button" data-type='PickParam'>
+                	提交
+            	</button>
+				</div>
+
+			</div>
+		</section>
+	</body>
+	<script src="js/common.js"></script>
+	<script type="text/javascript" src="js/fill_data.js"></script>
+	
+</html>

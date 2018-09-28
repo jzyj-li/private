@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>上传信息列表</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/list.css  " />
+		<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<section class="list">
+			<div class="tab-nav">
+				<div class="item active" data-index='0'>种植批次</div>
+				<div class="item" data-index='1'>施肥</div>
+				<div class="item" data-index='2'>施药</div>
+				<div class="item" data-index='3'>采收</div>
+			</div>
+
+			<div>
+				<!--种植批次-->
+				<div class="tab-content active">
+					<form action="" class="small-form">
+						<div class="small-form-item">
+							<label for="" class="breedsName">
+                                             品种
+                    </label>
+							<input type="hidden" name='breedsId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='breedsList' data-index='0'></span>
+						</div>
+						<!--<div class="small-form-item">
+                    <label for="" class='farmlandName'>
+                          	地块编号	
+                    </label>
+                    <input type="hidden" name='farmlandCode'>
+                    <span class="pull mui-icon mui-icon-arrowdown" data-type='farmlandList' data-index='0'></span>
+                </div>-->
+						<!--布局所需-->
+						<!--<div class="small-form-item" style="visibility: hidden"></div>-->
+						<div class="small-form-item date">
+							<label for="" class='startDate'>
+                      2018
+                    </label>
+							<input type="hidden" name='startDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-label='startDate' data-index='0' data-type='date'></span>
+						</div>
+						<div class="txt">
+							至
+						</div>
+						<div class="small-form-item date">
+							<label for="" class='endDate'>
+                        2018
+                    </label>
+							<input type="hidden" name='endDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-label='endDate' data-index='0' data-type='date'></span>
+						</div>
+						<div class="search" data-type='cropBatch' data-index='0'>
+							搜索
+						</div>
+						<div class="clear">
+							清空搜索条件
+						</div>
+					</form>
+
+				
+				</div>
+				<!--施肥-->
+				<div class="tab-content">
+					<form action="" class="small-form">
+						<div class="small-form-item">
+							<label for="" class='breedsName'>
+                                                                           品种
+                            </label>
+							<input type="hidden" name='breedsId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='breedsList' data-index='1'></span>
+						</div>
+						<div class="small-form-item">
+							<label for="" class='cropBatchName'>
+                                                                         种植批次
+                            </label>
+							<input type="hidden" name='cropBatchId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='cropBatchList' data-index='1'></span>
+						</div>
+						<div class="small-form-item">
+							<label for="" class='fertilizerName'>
+                                                                    肥料名称
+                    </label>
+							<input type="hidden" name='fertilizerId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='fertilizerList' data-index='1'></span>
+						</div>
+						<div class="small-form-item date">
+							<label for="" class='startDate'>
+                     
+                    </label>
+							<input type="hidden" name='startDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='date' data-label='startDate' data-index='1'></span>
+						</div>
+						<div class="txt">
+							至
+						</div>
+						<div class="small-form-item date">
+							<label for="" class='endDate'>
+                      
+                    </label>
+							<input type="hidden" name='endDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='date' data-label='endDate' data-index='1'></span>
+						</div>
+						<div class="search" data-type='Fertilizer' data-index='1'>
+							搜索
+						</div>
+						<div class="clear">
+							清空搜索条件
+						</div>
+					</form>
+
+
+				</div>
+				<!--施药-->
+				<div class="tab-content">
+					<form action="" class="small-form">
+						<div class="small-form-item">
+							<label for="" class='breedsName'>
+                                                                                 品种
+                            </label>
+							<input type="hidden" name='breedsId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='breedsList' data-index='2'></span>
+						</div>
+						<div class="small-form-item">
+							<label for="" class='cropBatchName'>
+                                                                               种植批次
+                            </label>
+							<input type="hidden" name='cropBatchId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='cropBatchList' data-index='2'></span>
+						</div>
+						<div class="small-form-item">
+							<label for="" class='pesticideName'>
+                                                                                    农药名称
+                            </label>
+							<input type="hidden" name='pesticideId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='pesticideList' data-index='2'></span>
+						</div>
+						<div class="small-form-item date">
+							<label for="" class='startDate'>
+                        
+                    </label>
+							<input type="hidden" name='startDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='date' data-index='2' data-label='startDate'></span>
+						</div>
+						<div class="txt">
+							至
+						</div>
+						<div class="small-form-item date">
+							<label for="" class='endDate'>
+                        
+                    </label>
+							<input type="hidden" name='endDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='date' data-index='2' data-label='endDate'></span>
+						</div>
+						<div class="search" data-type='Pesticide' data-index='2'>
+							搜索
+						</div>
+						<div class="clear">
+							清空搜索条件
+						</div>
+					</form>
+
+					
+				</div>
+				<!--采收-->
+				<div class="tab-content">
+					<form action="" class="small-form">
+						<div class="small-form-item">
+							<label for="" class='breedsName'>
+                        品种
+                    </label>
+							<input type="hidden" name='breedsId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='breedsList' data-index='3'></span>
+						</div>
+						<div class="small-form-item">
+							<label for="" class='cropBatchName'>
+                        种植批次
+                    </label>
+							<input type="hidden" name='cropBatchId'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='cropBatchList' data-index='3'></span>
+						</div>
+						<!--布局-->
+						<div class="search" data-type='Pick' data-index='3'>
+							搜索
+						</div>
+						<div class="small-form-item date">
+							<label for="" class='startDate'>
+          
+                    </label>
+							<input type="hidden" name='startDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='date' data-index='3' data-label='startDate'></span>
+						</div>
+						<div class="txt">
+							至
+						</div>
+						<div class="small-form-item date">
+							<label for="" class='endDate'>
+                      
+                            </label>
+							<input type="hidden" name='endDate'>
+							<span class="pull mui-icon mui-icon-arrowdown" data-type='date' data-index='3' data-label='endDate'></span>
+						</div>
+					
+						<div class="clear">
+							清空搜索条件
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--列表-->
+			<div class="layout-list swiper-container swiper-container-vertical swiper-container-free-mode"  id='container'>
+				<div id="layoutList" class="swiper-wrapper"></div>
+				<div class="loadmore">加载更多</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<a href="index.html" class="item">
+					<img src="images/icon-2.png" alt="" width="22">
+					<p>批次填报</p>
+				</a>
+				<a href="fill_data.html" class="item">
+					<img src="images/icon-2.png" alt="" width="22">
+					<p>数据填报</p>
+				</a>
+				<a href="list.html" class="item">
+					<img src="images/icon-1.png" alt="" width="25">
+					<p>上传记录</p>
+				</a>
+				<a href="mine.html" class="item">
+					<img src="images/icon-3.png" alt="" width="25">
+					<p>个人信息</p>
+				</a>
+			</div>
+		</footer>
+	</body>
+
+	<script src="js/common.js"></script>
+	<script src="js/list.js"></script>
+	<script>
+		//$('.right').tap(function () {
+		//  jumpPage($(this).attr('source'), $(this).attr('status'))
+		//})
+	</script>
+
+</html>

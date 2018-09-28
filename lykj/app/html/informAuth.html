@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/plugin/LArea-master/dist/css/LArea.css">
+    <link rel="stylesheet" href="../static/style/home.css">
+    <title>个人信息认证</title>
+</head>
+<body>
+<!--START HOME-->
+<section>
+    <div class='home'>
+        <div class="banner">
+            <img src= '../static/images/inform.png'alt=""/>
+        </div>
+        <div class="form">
+            <div class="form-item" id="city">
+                <input type="text" placeholder='选择所在地' readOnly />
+                <span id="area" class="arrow">广东 深圳</span>
+                <input type="hidden" id="cityCode">
+            </div>
+            <div class="form-item">
+                <input type="text" placeholder='输入真实姓名' id="name" />
+            </div>
+            <div class="form-item">
+                <input type="text" placeholder='输入身份证号码' id="cardId" maxlength="18"/>
+            </div>
+        </div>
+        <div class="tip">
+            姓名、身份证要与您身份证保持一致
+            <br>不可用他人信息,否则会进入征信黑名单
+        </div>
+        <div class="button">
+            <button class='submit' type="button" style="margin-bottom: 0">立即申请</button>
+        </div>
+        <div class="tip">
+            <div class="checkbox active"></div>我已阅读并同意 <a href="protocol.html">《保险服务协议》</a>，以提升个人信用和放款成功率
+        </div>
+    </div>
+</section>
+<!--END HOME-->
+<div class='footer'>
+    <p>Copyright@2018深圳市乐益网络科技有限公司</p>
+    <p>借贷有风险，请选择正确机构。具体放款时间依个人情况而定</p>
+</div>
+</body>
+<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+<script type="text/javascript" src="../static/plugin/layer_mobile/layer.js"></script>
+<script src="../static/plugin/LArea-master/dist/js/LArea.js"></script>
+<script src="../static/javascript/common.js"></script>
+<script src="../static/javascript/informAuth.js"></script>
+
+</html>

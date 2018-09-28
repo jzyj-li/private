@@ -1,0 +1,326 @@
+.checkbox {
+  width: 0.28rem;
+  height: 0.28rem;
+  display: inline-block;
+  border: 1px solid #6a90e1;
+  vertical-align: bottom;
+  border-radius: 2px;
+  margin-right: 0.18rem;
+}
+.checkbox.active {
+  background-image: url("../images/yes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px auto;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+html,
+p {
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  font-family: sans-serif;
+  height: 100%;
+}
+h5 {
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+input,
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f4f9;
+}
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+}
+.form {
+  width: 100%;
+  padding: 0 4%;
+  background-color: #fff;
+}
+.form .form-item {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 1rem;
+  border-bottom: 1px solid #f6f6f6;
+}
+.form .form-item span {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  color: #090909;
+  font-size: 13px;
+  line-height: 1rem;
+}
+.form .form-item .arrow {
+  background-image: url("../images/arrow.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 8px auto;
+  padding-right: 0.4rem;
+}
+.form .form-item input {
+  font-size: 15px;
+  height: 100%;
+  margin-right: auto;
+}
+.form .form-item .code {
+  width: 1.7rem;
+  height: 0.76rem;
+  background-color: #6592e3;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  line-height: 0.75rem;
+  border-radius: 6px;
+}
+.form .form-item .radio {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.form .form-item .radio span {
+  display: block;
+  width: 1.25rem;
+  height: 0.57rem;
+  border: 1px solid #e3e2e3;
+  font-size: 11px;
+  color: #969497;
+  text-align: center;
+  line-height: 0.57rem;
+  border-radius: 0.26rem;
+}
+.form .form-item .radio span:first-child {
+  margin-right: 0.15rem;
+}
+.form .form-item .radio .m-r {
+  margin-right: 0.15rem;
+}
+.form .form-item .radio .active {
+  background-color: #d3dff7;
+  color: #6592e3;
+  border: none;
+}
+.form .form-item select {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.form .form-item:last-child {
+  border: none;
+}
+.form .small input {
+  width: 30%;
+}
+.tip {
+  padding: 0 4%;
+  font-size: 11px;
+  margin-top: 0.2rem;
+  color: #b1afb2;
+  line-height: 1.5;
+}
+.tip a {
+  color: #6592e3;
+  text-decoration: none;
+}
+.button {
+  width: 100%;
+  padding: 0 4%;
+}
+.submit {
+  width: 100%;
+  height: 1rem;
+  background-color: #6592e3;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1rem;
+  color: #fff;
+  margin: 0.6rem auto 0.5rem auto;
+  border-radius: 4px;
+}
+.footer {
+  text-align: center;
+  margin: 0.6rem auto;
+}
+.footer p {
+  color: #c2c2c2;
+  font-size: 9px;
+}
+.footer p:last-child {
+  font-size: 8px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 4.7rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.banner button {
+  position: absolute;
+  width: 2.15rem;
+  height: 0.58rem;
+  bottom: 0.73rem;
+}
+.banner .no-credit {
+  left: 1.2rem;
+}
+.banner .has-credit {
+  right: 1.2rem;
+}
+.home {
+  height: 90%;
+}
+.product-list {
+  padding: 0 4%;
+  background-color: #fff;
+}
+.product-list .item {
+  width: 100%;
+  height: 2.3rem;
+  border-bottom: 4px solid #f5f3f6;
+}
+.product-list .item .title {
+  display: flex;
+  flex-flow: row;
+  height: 1rem;
+  align-items: center;
+}
+.product-list .item .title h5 {
+  font-size: 16px;
+  color: #28282a;
+}
+.product-list .item .title .star-wrap {
+  display: inline-block;
+  height: 0.26rem;
+  margin-left: 0.2rem;
+  font-size: 0px;
+}
+.product-list .item .title .star-wrap span {
+  display: inline-block;
+  width: 0.26rem;
+  height: 0.26rem;
+  margin-right: 0.08rem;
+  vertical-align: top;
+  background-image: url("../images/star.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.26rem;
+}
+.product-list .item .title .star-wrap .none {
+  background-image: url("../images/n_star.png");
+}
+.product-list .item .mes {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.product-list .item .mes > div p:first-child {
+  line-height: 23px;
+  font-size: 23px;
+  color: #6592e3;
+}
+.product-list .item .mes > div p:first-child small {
+  font-size: 13px;
+  color: #bfbcc0;
+}
+.product-list .item .mes > div p:last-child {
+  margin-top: 0.1rem;
+  font-size: 13px;
+  color: #bfbcc0;
+}
+.product-list .item .mes > div p {
+  height: auto;
+}
+.credit-list {
+  width: 100%;
+  overflow: hidden;
+}
+.credit-list .item {
+  display: inline-block;
+  width: 49.6%;
+  padding: 0.2rem 0.3rem;
+  min-height: 4.72rem;
+  background-color: #fff;
+  margin-bottom: 0.06rem;
+  float: left;
+}
+.credit-list .item .img {
+  width: 100%;
+  height: 2rem;
+  border-radius: 6px;
+}
+.credit-list .item .img img {
+  width: 100%;
+}
+.credit-list .item h5 {
+  margin-top: 0.2rem;
+  font-size: 13px;
+  color: #202020;
+  margin-bottom: 0.05rem;
+}
+.credit-list .item .label {
+  font-size: 0px;
+}
+.credit-list .item .label span {
+  display: inline-block;
+  min-width: 1.3rem;
+  height: 0.42rem;
+  border: 1px solid #6592e3;
+  font-size: 10px;
+  color: #6592e3;
+  line-height: 0.42rem;
+  padding: 0 0.15rem;
+  border-radius: 4px;
+  margin-top: 0.1rem;
+  margin-right: 0.12rem;
+}
+.credit-list .item button {
+  width: 1.9rem;
+  height: 0.55rem;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 0.55rem;
+  border-radius: 2px;
+  background-color: #6592e3;
+  margin: 0 auto;
+  margin-left: 0.6rem;
+}
+.credit-list .item:nth-child(2n) {
+  margin-left: 0.06rem;
+}
+.default img {
+  width: 100%;
+}
+.default button {
+  display: block;
+  width: 2.9rem;
+  height: 0.87rem;
+  border-radius: 0.43rem;
+  background-color: #6592e3;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  line-height: 0.87rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}

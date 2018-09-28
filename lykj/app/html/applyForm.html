@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../static/style/home.css">
+    <title>乐口袋</title>
+</head>
+<body>
+<!--START HOME-->
+<section>
+    <div class='home'>
+        <div class="banner">
+            <img src= '../static/images/apply.png'alt=""/>
+        </div>
+        <div class="form">
+            <div class="form-item">
+                <input type="text" value='月收入' readOnly/>
+                <div class="radio" data-type="income">
+                    <span  data-type="1">五千以下</span>
+                    <span class='active' data-type="2">五千以上</span>
+                </div>
+            </div>
+            <div class="form-item" >
+                <input type="text" value='薪资发放形式' readOnly/>
+                <div class="radio" data-type="salaryPayMethod">
+                    <span data-type="1">现金</span>
+                    <span class='active' data-type="2">银行代发</span>
+                </div>
+            </div>
+            <div class="form-item" >
+                <input type="text" value='社保' readOnly/>
+                <div class="radio" data-type="socialSecurity">
+                    <span data-type="1">未缴纳</span>
+                    <span class='active' data-type="2">已缴纳</span>
+                </div>
+            </div>
+            <div class="form-item">
+                <input type="text" value='公积金' readOnly/>
+                <div class="radio" data-type="providentFund">
+                    <span data-type="1">未缴纳</span>
+                    <span class='active' data-type="2">已缴纳</span>
+                </div>
+            </div>
+            <div class="form-item">
+                <input type="text" value='房产' readOnly/>
+                <div class="radio" data-type="houseProperty">
+                    <span data-type="1">有房</span>
+                    <span class='active' data-type="2">无房</span>
+                </div>
+            </div>
+            <div class="form-item">
+                <input type="text" value='车产' readOnly/>
+                <div class="radio" data-type="carProperty">
+                    <span data-type="1">有车</span>
+                    <span class='active' data-type="2">无车</span>
+                </div>
+            </div>
+            <div class="form-item small">
+                <input type="text" value='人寿保险' readOnly/>
+                <div class="radio" data-type="insuranceProperty">
+                    <span data-type="1">已投保</span>
+                    <span class="m-r" data-type="2">已投两年</span>
+                    <span class='active' data-type="3">未投保</span>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button class='submit'>立即申请</button>
+        </div>
+    </div>
+</section>
+<!--END HOME-->
+<div class='footer'>
+    <p>Copyright@2018深圳市乐益网络科技有限公司</p>
+    <p>借贷有风险，请选择正确机构。具体放款时间依个人情况而定</p>
+</div>
+<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+<script type="text/javascript" src="../static/plugin/layer_mobile/layer.js"></script>
+<script src="../static/plugin/LArea-master/dist/js/LArea.js"></script>
+<script src="../static/javascript/common.js"></script>
+<script src="../static/javascript/applyForm.js"></script>
+</body>
+</html>

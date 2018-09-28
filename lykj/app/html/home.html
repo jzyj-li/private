@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐口袋</title>
+    <link rel="stylesheet" href="../static/style/home.css">
+</head>
+<body>
+<!--START HOME-->
+<section>
+    <div class='home'>
+        <div class="banner">
+            <img src= '../static/images/home.png'alt=""/>
+        </div>
+        <div class="form">
+            <div class="form-item">
+                <input type="text" placeholder='选择借款金额' readOnly/>
+                <span class="arrow">1万以下</span>
+                <select name="" id="amount">
+                    <option value="0">1万以下</option>
+                    <option value="1">1~3万</option>
+                    <option value="2">3~5万</option>
+                    <option value="3">5~20万</option>
+                    <option value="4">20万以上</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <input type="tel" placeholder='输入手机号码' maxLength='11' id="tel"/>
+            </div>
+            <div class="form-item">
+                <input type="text" placeholder='输入验证码' id="verCode"/>
+                <div class="code" id="code" key="true">获取验证码</div>
+            </div>
+            <div class="form-item">
+                <input type="text" value='是否有信用卡' readOnly/>
+                <div class="radio" data-type='radio'>
+                    <span data-type="2">无</span>
+                    <span class='active' data-type="1">有</span>
+                </div>
+            </div>
+        </div>
+        <div class="tip">
+            <div class="checkbox active"></div>我已阅读并同意 <a href="Agreement.html">《用户授权协议》</a>
+        </div>
+        <div class="button">
+            <button class='submit' type="button" id="submit">立即申请</button>
+        </div>
+    </div>
+</section>
+<!--END HOME-->
+<div class='footer'>
+    <p>Copyright@2018深圳市乐益网络科技有限公司</p>
+    <p>借贷有风险，请选择正确机构。具体放款时间依个人情况而定</p>
+</div>
+<script src="https://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
+<script type="text/javascript" src="../static/plugin/layer_mobile/layer.js"></script>
+<script src='../static/javascript/common.js'></script>
+<script src="../static/javascript/home.js"></script>
+
+</body>
+</html>

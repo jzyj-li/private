@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="./js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/mine.css"/>
+   	<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet"  />
+    <script type="text/javascript" charset="utf-8">
+        mui.init({
+        	statusBarBackground: '#9defbcg'
+        });
+        
+        mui.plusReady(function(){
+        	
+        	plus.navigator.closeSplashscreen();
+    		console.log(document.cookie)
+        	if (Utils.getCookie('login')) {
+        		Utils.autoLogin();
+        	} else {
+       
+      			mui.openWindow({
+	     			//url: Utils.BASE + 'login.html',
+	     			url:'login.html',
+	     			id: 'login'
+     			})	
+        	}
+
+		});
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav" id="header">
+		<a class=" mui-pull-right">
+			退出
+		</a>
+	</header>
+    <section class="mine">
+        <!--个人信息-->
+        <div class="mine-mes">
+            <div class="photo">
+            </div>
+            <p class="name" id="loginName">东方不报</p>
+            <p class="tel">13245678911</p>
+        </div>
+        <!--账户信息-->
+        <form action="" class="form">
+            <div class="form-item">
+                <label for="">
+                    基地名称：
+                </label>
+                <input type="text" disabled placeholder="请选择基地名称" name='baseinfoName'>
+                <span class="pull mui-icon mui-icon-arrowdown" data-type='baseInfoList'></span>
+            </div>
+            <div class="form-item">
+                <label for="">
+                    基地编号：
+                </label>
+                <input type="text" value="" disabled  name='baseinfoCode'>
+            </div>
+            <div class="form-item">
+                <label for="">
+                    地块编号：
+                </label>
+                <input type="text" value="" disabled name='farmlandCode'>
+                <span class="pull mui-icon mui-icon-arrowdown" data-type='farmlandList'></span>
+            </div>
+            <div class="form-item">
+                <label for="">
+                    责任人：
+                </label>
+                <input type="text" name= 'adminName'value="" disabled id='adminName'>
+            </div>
+        </form>
+        <footer>
+            <div class="footer">
+                <a data-href="index.html" class="item">
+                    <img src="images/icon-2.png" alt="" width="22">
+                    <p>批次填报</p>
+                </a>
+                <a data-href="fill_data.html" class="item">
+                    <img src="images/icon-2.png" alt="" width="22">
+                    <p>数据填报</p>
+                </a>
+                <a data-href="list.html" class="item">
+                    <img src="images/icon-1.png" alt="" width="25">
+                    <p>上传记录</p>
+                </a>
+                <a data-href="mine.html" class="item">
+                    <img src="images/icon-3.png" alt="" width="25">
+                    <p>个人信息</p>
+                </a>
+            </div>
+        </footer>
+    </section>
+   
+</body>
+<script src="js/mine.js"></script>
+</html>

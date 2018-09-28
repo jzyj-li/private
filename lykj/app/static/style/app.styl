@@ -1,0 +1,125 @@
+@import "base.styl"
+*
+	box-sizing border-box
+
+body, html,p
+	padding 0
+	margin 0
+	font-size 50px
+	font-family sans-serif
+	height 100%
+h5
+	font-weight normal
+	padding 0
+	margin 0
+input,button
+	border none
+	background none
+	outline none
+body
+	width 100%
+	height 100%
+	background-color $bgColor
+#root,.App
+	width 100%
+	height 100%
+.form
+	width 100%
+	padding 0 4%
+	background-color white
+	.form-item
+		position relative
+		display flex
+		flex-flow row
+		align-items center
+		height 1rem
+		border-bottom 1px solid $borderCOlor
+		span
+			display flex
+			flex-flow row
+			align-items center
+			color $fontColor
+			font-size $fontSize-m
+			line-height 1rem
+		.arrow
+			background-image url(../images/arrow.png)
+			background-position right center
+			background-repeat no-repeat
+			background-size 8px auto
+			padding-right .4rem
+		input
+			font-size $fontSize-l
+			height 100%
+			margin-right auto
+		.code
+			width 1.7rem
+			height 0.76rem
+			background-color $baseCOlor
+			font-size $fontSize-s
+			color white
+			text-align center
+			line-height 0.75rem
+			border-radius 6px
+		.radio
+			display flex
+			flex-flow row
+			align-items center
+			span
+				display block
+				width 1.25rem
+				height 0.57rem
+				border 1px solid #e3e2e3
+				font-size 11px
+				color $fontColor2
+				text-align center
+				line-height 0.57rem
+				border-radius 0.26rem
+			span:first-child
+				margin-right 0.15rem
+			.m-r
+				margin-right 0.15rem
+			.active
+				background-color #d3dff7
+				color $baseCOlor
+				border none
+		select
+			position absolute
+			width 100%
+			height 100%
+			opacity 0
+	.form-item:last-child
+		border none
+	.small
+		input
+			width 30%
+.tip
+	padding 0 4%
+	font-size 11px
+	margin-top .2rem
+	color #b1afb2
+	line-height 1.5
+	a
+		color $baseCOlor
+		text-decoration none
+.button
+	width 100%
+	padding 0 4%
+.submit
+	width 100%
+	height 1rem
+	background-color $baseCOlor
+	font-size 16px
+	text-align center
+	line-height 1rem
+	color white
+	margin .6rem auto .5rem auto
+	border-radius 4px
+.footer
+	text-align center
+	margin .6rem auto
+	p
+		color #c2c2c2
+		font-size 9px
+	p:last-child
+		font-size 8px
+		
