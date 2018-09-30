@@ -120,7 +120,7 @@
         	var self = this;
         	utils.getAjax('record/CommonParamService/chedkCropBatch', {cropBatchId: this.commonParam.cropBatchId}, function(res){
         		if (res.pickStatus == 'YES') {
-        			$.toast('该批次流程已走完,请重新选择批次');
+        			$.toast(res.message);
         			$cropBatchId.innerHTML='';
         			$cropBatchCode.innerHTML = '';
         			self.commonParam.cropBatchId = '';
